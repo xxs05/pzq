@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, inital-scale=1.0">
+    </head>
+<style>
+    @keyframes rotate360 { 
+        from { 
+            transform: rotate(0deg); 
+        } 
+        to { 
+            transform: rotate(360deg); 
+        } 
+    } 
+    img:hover{
+        animation: rotate360 2s;
+    }
+    @media screen and (max-width:640px) {
+        .h{
+            text-align: center;
+            color: red;
+        }
+    }
+
+    @media screen and (min-width:640px) {
+        .h{
+            position: relative;
+            color: blue;
+            left: 400px;
+        }
+    }
+</style>
+<body>
+    <h2 class="h">教材</h2>
+		<span>计算机组成原理</span>
+        <span style="margin-left: 140px;">Java语言课程设计</span>
+        <span style="margin-left: 120px;">数据库原理与应用</span>
+        <span style="margin-left: 120px;">离散数学</span>
+        <span style="margin-left: 190px;">Web技术基础</span>
+        <br>
+        <div style="margin-top: 20px;">
+            <span style="color: black;">教材</span>
+            <span style="margin-left: 220px; color: black;">教材</span>
+            <span style="margin-left: 215px; color: black;">教材</span>
+            <span style="margin-left: 220px; color: black;">教材</span>
+            <span style="margin-left: 220px; color: black;">教材</span>
+        </div>
+        <div>
+            <span><img  src="./img/1.png" width="110"  alt="123"/></span>
+            <span style="margin-left: 140px;"><img  src="./img/java.jpg" width="110"  alt="123"/></span>
+            <span style="margin-left: 140px;"><img  src="./img/数据库.jpg" width="110" height="150" alt="123"/></span>
+            <span style="margin-left: 140px;"><img  src="./img/离散.jpg" width="110" height="150" alt="123"/></span>
+            <span style="margin-left: 140px;"><img  src="./img/web技术.jpg" width="110"  alt="123"/></span>
+        </div>
+		<br>
+        <span style="color: black;">参考书</span>
+        <span style="margin-left: 970px; color: black;">参考书</span>
+        <br>
+        <span><img src="./img/2.png" width="110px" height="125px" alt="123"></span>
+        <span style="margin-left: 910px;"><img src="./img/web开发.jpg" width="110px" alt="123"></span>
+</body>
+</html>

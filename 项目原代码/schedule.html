@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, inital-scale=1.0">
+    </head>
+<style>
+    .c{
+        background-color: red;
+    }
+    .j{
+        background-color: cornflowerblue;
+    }
+    .sj{
+        background-color: aqua;
+    }
+    .web{
+        background-color: aliceblue;
+    }
+    .ls{
+        background-color: hotpink;
+    }
+    .jd{
+        background-color: yellow;
+    }
+    @media screen and (max-width:640px) {
+        .table-custom td:nth-child(1),
+		.table-custom td:nth-child(1),
+		.table-custom td:nth-child(1),
+		.table-custom td:nth-child(1){
+			display: none;
+		}
+		.h{
+			color: red;
+		}
+    }
+
+    @media screen and (min-width:640px) {
+        .h{
+            position: relative;
+            color: blue;
+            left: 400px;
+        }
+    }
+</style>
+<body>
+    <h2 class="h">课表</h2>
+		<table border="1px" class="table-custom">
+			<tr>
+                <th colspan="2">节次</th>
+				<th>星期一</th>
+				<th>星期二</th>
+				<th>星期三</th>
+				<th>星期四</th>
+				<th>星期五</th>
+			</tr>
+			<tr>
+                <td rowspan="2">上午</td>
+                <td>第一二节</td>
+				<td class="c">计算机组成原理<strong>3A512</strong></th>
+				<td class="j">Java语言程序设计<strong>工A103</strong></th>
+				<td class="j">Java语言<strong>工A103</strong></th>
+				<td class="sj">数据库原理与应用<strong>3A216</strong></th>
+				<td class="ls">离散数学<strong>3A216</strong></th>
+			</tr>
+			<tr>
+                <td>第三四节</td>
+				<td class="j">Java语言<strong>工A103</strong</th>
+				<td class="web">Web技术基础<strong>工A306</strong></th>
+				<td class="ls">离散数学<strong>3A216</strong></th>
+				<td class="web">Web技术基础<strong>工A306</strong></th>
+				<td class="j">Java语言<strong>工A103</strong></th>
+			</tr>
+			<tr>
+                <td rowspan="2">下午</td>
+                <td>第五六节</td>
+				<td class="sj">数据库原理与应用<strong>3A216</strong></th>
+				<td class="jd">中国近代史纲要<strong>1B107</strong></th>
+				<td></th>
+				<td></th>
+				<td class="jd">中国近代史纲要<strong>1B107</strong></th>
+			</tr>
+			<tr>
+                <td>第七八节</td>
+				<td class="sj">数据库原理与应用<strong>3A216</strong></th>
+				<td class="jd">中国近代史纲要<strong>1B107</strong></th>
+				<td></th>
+				<td></th>
+				<td class="jd">中国近代史纲要<strong>1B107</strong></th>
+			</tr>
+		</table>
+		<div class="course-info-container">
+			<div class="course-info"></div>
+		</div>
+</body>
+<script>
+	var courseCells = document.querySelectorAll('.table-custom td');
+ 
+	 courseCells.forEach(function(cell) {
+	 cell.addEventListener('click', function() {
+		 var courseInfo = this.textContent;
+		 var courseColor = window.getComputedStyle(this).getPropertyValue('background-color');
+ 
+		 showCourseInfo(courseInfo, courseColor);
+	 });
+	 });
+ 
+	 function showCourseInfo(info, color) {
+	 var trimmedInfo = info.slice(0, -5);
+ 
+	 var infoContainer = document.querySelector('.course-info');
+	 infoContainer.innerHTML = "<u style='color: " + color + "'>" + trimmedInfo + "</u>简介" ;
+	 infoContainer.style.display = 'block';
+	 }
+   </script>
+</html>

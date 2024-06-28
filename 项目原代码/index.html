@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"  name="viewport" content="width=device-width, inital-scale=1.0">
+        <link href="1.css" herf="utils" rel="stylesheet">
+        <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+        <script src="js/utils.js"></script>
+        <title>web技术基础实验V4.3</title>
+    </head>
+<style>
+    .h{
+        text-align: center;
+        color: blue;
+    }
+    a{
+        text-decoration: underline;
+        color: blue;
+    } 
+    a:hover { 
+        font-size: 25px;
+        color: red;
+    }
+    .f{
+        color:slateblue;
+        text-align: center;
+        bottom: 0;
+    }
+    @media screen and (min-height:540px) {
+        iframe{
+            height: 540px;
+           	background-color:cornsilk;
+            border: none;
+            overflow-y: hidden;
+        }
+    }
+</style>
+<body>
+    <div id="otherElement">
+        <h2 class="h">2023-2024学期课程情况</h2>
+        <p style="background: linear-gradient(to right,white,red);" class="f">
+        <a href="introduce.html" target="mainFrame">课程简介</a>&nbsp;&nbsp;
+        <a href="schedule.html" target="mainFrame">课表</a>&nbsp;&nbsp;
+        <a href="book.html" target="mainFrame">教材</a>
+        <a href="bwl.html" target="mainFrame">备忘录</a>
+        <span id="demo" style="color: blue;float: right;"></span>
+        </p>
+    </div>
+    <iframe class="f" name="mainFrame" src="introduce.html" height="540px" width="100%"></iframe>
+    <footer style="background: linear-gradient(to right,white,red);" class="f">
+    &copy闽江学院&nbsp;计算机和大数据学院&#8482;软件工程<br>
+    联系人：彭志强&nbsp;&nbsp;学号：3232508244
+    </footer>
+    </body>
+    </html>

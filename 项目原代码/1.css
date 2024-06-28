@@ -1,0 +1,142 @@
+footer{
+    color: palevioletred;
+}
+@media screen and (min-height:540px){
+    iframe{
+        background-image: url(5.jpg);
+        opacity: 0.86;
+        overflow-y: hidden;
+        height: 705px;
+        flex: 1;
+    }
+}
+@media screen and (max-width:640px){
+    h3{
+        color: red;
+        text-align: center;
+    }
+}
+@media screen and (min-width:640px){
+    h3{
+        position: relative;
+        color: blue;
+        text-align: left;
+    }
+}
+
+@keyframes rotate360 {  
+from {  
+    transform: rotate(0deg);  
+}  
+to {  
+    transform: rotate(360deg);  
+}  
+}  
+img:hover{
+    animation: rotate360 2s;
+}
+.a{
+    display:block;
+}
+.b{
+    display:flex;
+}
+footer{
+    text-align: center;
+}
+a {  
+color: blue;
+font-size: 16px;  
+transition: font-size 0.3s ease; 
+text-decoration: none;
+text-align: center;
+}  
+a:hover {  
+font-size: 20px;
+color: red;
+}
+.h{
+    text-align: center;
+    color: blue;
+}
+.f{
+    border: none;
+}
+.ji{
+    background-color: red;
+}
+.java{
+    background-color: dodgerblue;
+}
+.shu{
+    background-color: aqua;
+}
+.li{
+    background-color: pink;
+}
+.zhong{
+    background-color: yellow;
+}
+.web{
+    background-color: white;
+}
+tr{
+    border-color: white;
+}
+.ys{
+    color: blue;
+}
+html{
+    max-width: 1678.11px;
+    max-height: 680.28px;
+}
+body{
+    align-items: center;
+    margin: 0px;
+}
+@media  screen and (max-width:640px){
+    .table-custom td:nth-child(1),
+    .table-custom th:nth-child(1),
+    .table-custom td:nth-child(1),
+    .table-custom th:nth-child(1),
+    #td12,#td56{
+    display: none;
+    }
+}
+.z{
+    text-align: center;
+}
+.memo{
+    color: red;
+    font-weight: bolder;
+}
+.bei{
+    text-align: center;
+    margin-top: 20px;
+}
+  ul {
+    padding: 0; /* 去除默认的内边距 */
+    margin-left: 420px; /* 将列表项水平居中 */
+  }
+  
+  li {
+    margin: 0 10px; /* 可选：添加一些水平间距 */
+  }
+  li::before {
+    width: 10px; /* 可选：设置点的宽度 */
+    text-align: right; /* 可选：调整点的水平对齐方式 */
+    left: 410px; /* 调整点的位置，使其居中 */
+    top: 50%; /* 将点垂直居中 */
+    transform: translateY(-50%); /* 调整垂直居中 */
+  }
+  .memo-text {
+      color:red; 
+  }
+  
+  .memo-date {
+      color: skyblue; 
+  }
+  .importance-high {
+      background-color: brown; 
+      color: white;
+  }
